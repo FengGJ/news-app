@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/gjf_base.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <title>Document</title>
+    <script type="text/javascript">
+        function size (originSize,type){
+            type=type||"x";
+            var width=document.documentElement.clientWidth;
+            var height=document.documentElement.clientHeight;
+            var scale=0;
+            if(type=="x"){
+                scale=width/originSize*100;
+            }
+            else if(type=="y"){
+                scale=height/originSize*100;
+            }
+            document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
+        }
+        $(function () {
+            size(1334,"y")
+        })
+    </script>
+</head>
+<body>
+<header id="sign-h">
+    <div class="header" >
+        <div></div>
+    </div>
+    <nav>
+        <div class="close">
+            <div>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="sign-word">Sign In</div>
+    </nav>
+</header>
+	<div class="content">
+        <div class="person">
+            <div class="p-img"><div></div></div>
+        </div>
+        <form action="index.html"id="sign"></form>
+        <div class="username"><input type="text" form="sign" placeholder="E-mail"></div>
+        <div class="password"><input type="password" form="sign" placeholder="Password"></div>
+        <div class="btn"><input type="submit" form="sign" value="Sign In"></div>
+        <div class="forget"><a href="javascript:;">Forgot your delails?</a></div>
+        <div class="sign-up"><a href="javascript:;">Create a new accout</a></div>
+    </div>
+</body>
+</html>
