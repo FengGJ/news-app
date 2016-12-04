@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo1.png"/>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/gjf_base.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/touch.min.js"></script>
+
+    <style>
+
+        .wait{
+            width:100%;height:100%;
+        }
+        .w-img{
+            width:100%;height:100%;
+            background:url("img/background.png")no-repeat  0 0;
+            background-size:100%;
+            position:absolute;
+            left:0;top:0;
+        }
+        .logo{
+            width:1.39rem;height:1.33rem;
+
+            background:url("img/logo.png")no-repeat  0 0;
+            background-size:100%;
+
+            position:absolute;
+            left:0;top:4.7rem;right:0;
+            margin:auto;
+            z-index: 9;
+            animation:rotate linear 1s infinite;
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<script>
+    function size(originSize, type) {
+        type = type || "x";
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+        var scale = 0;
+        if (type == "x") {
+            scale = width / originSize * 100;
+        }
+        else if (type == "y") {
+            scale = height / originSize * 100;
+        }
+        document.getElementsByTagName("html")[0].style.fontSize = scale + "px";
+    }
+    $(function(){
+        size(1334, "y")
+    })
+</script>
+<body>
+
+<header>
+    <div class="header" >
+        <div></div>
+    </div>
+    <nav>
+    </nav>
+</header>
+<div class="wait">
+
+    <script>
+        var num=0;
+        setInterval(function(){
+            num++
+            if(num>3){
+                location.href="index.html"
+            }
+        },1000)
+    </script>
+    <div class="logo"></div>
+    <div class="w-img"></div>
+</div>
+
+</body>
+</html>
