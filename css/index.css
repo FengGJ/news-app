@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    width: 7.5rem;
     position: relative;
     z-index: 9;
 
@@ -50,7 +50,7 @@ header {
 
 nav {
     height: 1.04rem;
-    width: 100%;
+    width: 7.5rem;
     padding: 0.2rem .35rem 0;
 }
 
@@ -69,6 +69,7 @@ nav > div {
     -o-transition: opacity 1s ease;
     transition: opacity 1s ease;
     z-index: 9;
+    cursor:pointer;
 }
 
 #news-h .close.active {
@@ -149,7 +150,7 @@ nav > div {
 }
 
 .content {
-    width: 100%;
+    width: 7.5rem;
     background: #fff;
     padding: 0 .7rem;
 }
@@ -246,7 +247,7 @@ nav > div {
 }
 
 .h-img {
-    width: 100%;
+    width: 7.5rem;
     height: 7.29rem;
     position: absolute;
     top: 0;
@@ -391,7 +392,7 @@ nav > div {
 }
 
 .fixed {
-    width: 100%;
+    width: 7.5rem;
     height: 2.8rem;
     background: #fff;
     position: fixed;
@@ -457,6 +458,7 @@ nav > div {
     color: #fff;
     margin-right: .16rem;
     border-radius: .25rem;
+    cursor:pointer;
 }
 
 .keyword div:last-child {
@@ -474,8 +476,8 @@ nav > div {
 }
 
 .nav-left {
-    width: 80%;
-    height: 100%;
+    width: 6rem;
+    height: 13.34rem;
     background: url("../img/Layer 657.png") no-repeat 0 0;
     background-size: 100% 100%;
     position: fixed;
@@ -615,8 +617,8 @@ nav > div {
 
 /*遮罩*/
 .mask {
-    width: 100%;
-    height: 100%;
+    width: 7.5rem;
+    height: 13.34rem;
     position: fixed;
     background: rgba(0, 0, 0, .8);
     opacity: 0;
@@ -684,7 +686,8 @@ nav > div {
     height: 1.11rem;
     border-radius: 50%;
     position: fixed;
-    right: .45rem;
+    /*right: .45rem;*/
+   	left:5.95rem;
     bottom: .39rem;
     background: #384756;
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .4);

@@ -12,7 +12,7 @@ function size(originSize, type) {
     document.getElementsByTagName("html")[0].style.fontSize = scale + "px";
 }
 $(function () {
-    size(1334, "y")
+    size(750, "x")
 
     var flag = true;
     $(".mask").hide()
