@@ -37,8 +37,9 @@ $(function () {
             $(".mask").removeClass("show");
 
         }
-    })
-    touch.on($('.mask'), "touchstart", function () {
+    });
+
+    function close(){
         if (flag) {
             return;
         }
@@ -50,7 +51,16 @@ $(function () {
         $('#news-h nav .close').removeClass("active");
         $(".nav-left").removeClass("active");
         $(".mask").removeClass("show");
+    }
+    touch.on($('.mask'), "touchstart", function () {
+       close();
+    });
+    touch.on($(".nav-left"), "swipeleft", function () {
+        close();
+l
     })
+
+
     if ($('.mask')[0]) {
         $('.mask')[0].addEventListener("webkitTransitionEnd", function () {
             if ($('#news-h nav .close').attr("class") == "close active") {
@@ -61,19 +71,24 @@ $(function () {
         })
     } else {
     }
+
+
+
     $(".nav-items li").click(function () {
         $(".nav-items li").removeClass("active");
         $(this).addClass("active");
     })
-    touch.on($(".nav-items li"), "tap", function () {
 
-    })
+
+
     var t = setTimeout(function () {
         $("#news-h .close").css("opacity", "0");
         clearInterval(t);
     }, 3000)
 
-    $(".fixe-close").click(function () {
+
+
+    $(".fixed-close").click(function () {
         $(this).toggleClass("active")
     })
 

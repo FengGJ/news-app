@@ -1,0 +1,47 @@
+{
+  "message.html": {
+    "resources": [
+      "img/background1.png",
+      "index.html",
+      "img/status_bar.png",
+      "css/gjf_base.css",
+      "js/swiper.animate1.0.2.min.js",
+      "js/swiper.min.js",
+      "css/animate.min.css",
+      "fonts/iconfont.woff",
+      "css/index.css",
+      "img/profile.jpg",
+      "js/zepto.min.js",
+      "css/iconfont.css",
+      "css/swiper.min.css",
+      "js/touch.min.js",
+      "js/index.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "message.html",
+      "img/status_bar.png",
+      "css/gjf_base.css",
+      "js/swiper.animate1.0.2.min.js",
+      "img/Layer 657.png",
+      "js/swiper.min.js",
+      "css/animate.min.css",
+      "img/news-xq.jpeg",
+      "fonts/iconfont.woff",
+      "css/index.css",
+      "img/profile.jpg",
+      "js/zepto.min.js",
+      "css/iconfont.css",
+      "css/swiper.min.css",
+      "js/touch.min.js",
+      "js/index.js"
+    ],
+    "refer": [
+      "message.html"
+    ]
+  }
+}

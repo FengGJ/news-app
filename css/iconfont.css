@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('../fonts/iconfont.eot?t=1480854561021'); /* IE9*/
-  src: url('../fonts/iconfont.eot?t=1480854561021#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/iconfont.woff?t=1480854561021') format('woff'), /* chrome, firefox */
-  url('../fonts/iconfont.ttf?t=1480854561021') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('../fonts/iconfont.svg?t=1480854561021#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('../fonts/iconfont.eot?t=1480901576021'); /* IE9*/
+  src: url('../fonts/iconfont.eot?t=1480901576021#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff?t=1480901576021') format('woff'), /* chrome, firefox */
+  url('../fonts/iconfont.ttf?t=1480901576021') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg?t=1480901576021#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -12,13 +12,19 @@
   font-size:.24rem;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-width: 0.0002rem;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-fanhuijian:before { content: "\e697"; }
+
 .icon-like:before { content: "\e65c"; }
 
+.icon-cuowu:before { content: "\e617"; }
+
 .icon-pinglun2:before { content: "\e64a"; }
+
+.icon-daohang:before { content: "\e614"; }
 
 .icon-xiaoxi2:before { content: "\e634"; }
 

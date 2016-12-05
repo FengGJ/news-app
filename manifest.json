@@ -1,4 +1,4 @@
-﻿{
+{
     "@platforms": ["android", "iPhone", "iPad"],
     "id": "H5E908F17",/*应用的标识，创建应用时自动生成，勿手动修改*/
     "name": "news",/*应用名称，程序桌面图标名称*/
@@ -108,6 +108,7 @@
             "autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
             "waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
         },
+        ramcachemode="enable",
         "popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
         "runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
         "signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
@@ -199,5 +200,67 @@
                 }
             }
         }
-    }
+    },
+	"dependencies": {
+		"pages": {
+			"message.html": {
+				"resources": [
+					"img/background1.png",
+					"index.html",
+					"img/status_bar.png",
+					"css/gjf_base.css",
+					"js/swiper.animate1.0.2.min.js",
+					"js/swiper.min.js",
+					"css/animate.min.css",
+					"fonts/iconfont.woff",
+					"css/index.css",
+					"img/profile.jpg",
+					"js/zepto.min.js",
+					"css/iconfont.css",
+					"css/swiper.min.css",
+					"js/touch.min.js",
+					"js/index.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"message.html",
+					"img/status_bar.png",
+					"css/gjf_base.css",
+					"js/swiper.animate1.0.2.min.js",
+					"img/Layer 657.png",
+					"js/swiper.min.js",
+					"css/animate.min.css",
+					"img/news-xq.jpeg",
+					"fonts/iconfont.woff",
+					"css/index.css",
+					"img/profile.jpg",
+					"js/zepto.min.js",
+					"css/iconfont.css",
+					"css/swiper.min.css",
+					"js/touch.min.js",
+					"js/index.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"js/swiper.jquery.min.js",
+				"js/iconfont.js",
+				"fonts/iconfont.eot",
+				"login.html",
+				"img/background.png",
+				"fonts/iconfont.svg",
+				"img/logo.png",
+				"fonts/iconfont.ttf",
+				"wait.html",
+				"img/sign-btn.png",
+				"img/logo1.png"
+			]
+		}
+	}
 }

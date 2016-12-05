@@ -17,8 +17,8 @@ header {
 }
 
 .h-bg {
-    background: url("../img/sign-btn.png") no-repeat 0 0;
-
+    background: url("../img/background1.png") no-repeat 0 0;
+    background-size:100% ;
 }
 
 #news-h {
@@ -302,7 +302,7 @@ nav > div {
     height: 100%;
     padding: 0 .45rem;
     position: absolute;
-    top: 7.29rem;
+    top: 7.28rem;
 }
 
 .xie {
@@ -344,7 +344,7 @@ nav > div {
     position: absolute;
     border-radius: 50%;
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3), 0 0 1rem rgba(277, 96, 91, .6);
-    left: 6.01rem;
+    right: .44rem;
     top: -1.07rem;
 }
 
@@ -593,6 +593,7 @@ nav > div {
     font-size: .24rem;
     line-height: .55rem;
     padding: 0 .15rem;
+    text-align: center;
 }
 
 .tip {
@@ -654,7 +655,6 @@ nav > div {
     border-bottom: .01rem solid #edeff0;
     position: relative;
 }
-
 .message li .name {
     font-size: .3rem;
 }
@@ -679,32 +679,15 @@ nav > div {
     opacity: .5
 }
 
-.fixe-close {
+.fixed-close {
     width: 1.11rem;
     height: 1.11rem;
     border-radius: 50%;
     position: fixed;
-    left: 5.95rem;
-    top: 11.85rem;
+    right: .45rem;
+    bottom: .39rem;
     background: #384756;
-}
-
-.fixe-close .close > div {
-    -webkit-transform: rotateZ(45deg);
-    -moz-transform: rotateZ(45deg);
-    -ms-transform: rotateZ(45deg);
-    -o-transform: rotateZ(45deg);
-    transform: rotateZ(45deg);
-}
-
-.fixe-close nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0.1rem;
-    margin: auto;
-    z-index: 9999;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .4);
 }
 
 .close div {
@@ -713,26 +696,16 @@ nav > div {
 
 }
 
-.fixe-close .close p {
-    width: .44rem;
-    height: .04rem;
-    -webkit-transform: translate(.02rem, .24rem);
-    -moz-transform: translate(.02rem, .24rem);
-    -ms-transform: translate(.02rem, .24rem);
-    -o-transform: translate(.02rem, .24rem);
-    transform: translate(.02rem, .24rem);
+.fixed-close ul{
+    width: 1.11rem;
+    height: 1.11rem;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
 }
-
-.fixe-close .close p:nth-child(2) {
-    -webkit-transform: translate(0, .22rem) rotateZ(90deg);
-    -moz-transform: translate(0, .22rem) rotateZ(90deg);
-    -ms-transform: translate(0, .22rem) rotateZ(90deg);
-    -o-transform: translate(0, .22rem) rotateZ(90deg);
-    transform: translate(0, .22rem) rotateZ(90deg);
-}
-
-.fixe-close ul li {
+.fixed-close ul li {
     position: absolute;
     width: .81rem;
     height: .81rem;
@@ -741,45 +714,78 @@ nav > div {
     transition: all 1s ease;
     opacity: 0;
 }
-.fixe-close.active ul li:nth-child(1) {
-    left: -1.41rem;
+.fixed-close.active ul li:nth-child(1) {
+    /*left: -1.41rem;*/
     opacity: 1;
+    -webkit-transform:translate(-1.41rem,0) ;
+    transform:translate(-1.41rem,0) ;
+
 }
-.fixe-close.active ul li:nth-child(2) {
-    top: -1.01rem;
-    left: -1.01rem;
+.fixed-close.active ul li:nth-child(2) {
+
+    -webkit-transform:translate(-1.01rem,-1.01rem) ;
+    transform:translate(-1.01rem,-1.01rem) ;
+
     opacity: 1;
+    -weblit-transition-delay:.1s;
+    transition-delay :.1s;
+}
+
+.fixed-close.active ul li:nth-child(3) {
+    -webkit-transform:translate(0,-1.41rem) ;
+    transform:translate(0,-1.41rem) ;
+
+    opacity: 1;
+    -weblit-transition-delay:.2s;
+    transition-delay :.2s;
 
 }
 
-.fixe-close.active ul li:nth-child(3) {
-    top: -1.41rem;
-    opacity: 1;
-}
-
-.fixe-close ul li .person {
+.fixed-close ul li .person {
     height: .81rem;
     padding: 0;
 }
 
-.fixe-close ul li .p-img {
+.fixed-close ul li .p-img {
     width: .81rem;
     height: .81rem;
 
 }
 
-.fixe-close ul li:nth-child(1) {
-    left: 0;
+.fixed-close ul li:nth-child(1) {
+    -weblit-transition-delay:.2s;
+    transition-delay :.2s;
+}
+
+.fixed-close ul li:nth-child(2) {
+
+    -weblit-transition-delay:.1s;
+    transition-delay :.1s;
+}
+
+.fixed-close ul li:nth-child(3) {
 
 }
 
-.fixe-close ul li:nth-child(2) {
-    top: 0;
-    left: 0;
+.fixed-c-font{
+    width:.48rem;height:.48rem;
+    position:absolute;
+    top:0;left:.05rem;;right:0;bottom:.1rem;margin:auto;
+    color:#fff;
+    -webkit-transform:rotateZ(45deg);
+    transform:rotateZ(45deg);
+    -weblit-transition:transform 1s ease;
+    transition:transform 1s ease;
 
 }
+.fixed-c-font .iconfont{
+    font-size: .48rem;
 
-.fixe-close ul li:nth-child(3) {
-    top: 0;
+}
+.fixed-close.active .fixed-c-font {
+    transform:rotateZ(0deg);
+
+
+
 
 }
